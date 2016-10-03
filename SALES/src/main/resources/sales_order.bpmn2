@@ -1,14 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:drools="http://www.jboss.org/drools" 
-id="Definition" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes"> 
-   <bpmn2:process id="SALES.sales_order" drools:packageName="org.jbpm" drools:version="1.0" name="" isExecutable="true"> 
-      <bpmn2:startEvent id="processStartEvent" drools:bgcolor="#9acd32" drools:selectable="true" name=""/> 
-   </bpmn2:process> 
-   <bpmndi:BPMNDiagram> 
-      <bpmndi:BPMNPlane bpmnElement="SALES.sales_order"> 
-         <bpmndi:BPMNShape bpmnElement="processStartEvent"> 
-            <dc:Bounds height="30.0" width="30.0" x="120.0" y="165.0"/> 
-         </bpmndi:BPMNShape> 
-      </bpmndi:BPMNPlane> 
-   </bpmndi:BPMNDiagram> 
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:drools="http://www.jboss.org/drools" id="_gB3dMYk9Eeazg7vqBRAn-A" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:process id="SALES.sales_order" drools:packageName="org.jbpm" drools:version="1.0" name="sales_order" isExecutable="true">
+    <bpmn2:laneSet id="_gB8VsIk9Eeazg7vqBRAn-A">
+      <bpmn2:lane id="_7A9527FA-AE81-43E7-A8BC-53DCC13F7396" drools:bgcolor="#ffffff" drools:selectable="true" name="Sales_man (User)"/>
+      <bpmn2:lane id="_F1B96F9D-AFB9-4316-9F7C-8622FAEF2DA4" drools:bgcolor="#ffffff" drools:selectable="true" name="Sales Manager"/>
+      <bpmn2:lane id="_9A644F28-48D7-43EB-80FC-17CF0559F09E" drools:bgcolor="#ffffff" drools:selectable="true" name="Senior Sales Manager"/>
+      <bpmn2:lane id="_15E2B41C-FB69-4079-808F-94DD03773AB8" drools:bgcolor="#ffffff" drools:selectable="true" name="technical_Verification (User)"/>
+      <bpmn2:lane id="_9141B004-9C4D-4F20-910A-5ACCF349587D" drools:bgcolor="#ffffff" drools:selectable="true" name="Accountant"/>
+      <bpmn2:lane id="_CC68865D-BD78-49EB-84A0-AA59176E3138" drools:bgcolor="#ffffff" drools:selectable="true" name="Delivery_officer"/>
+      <bpmn2:lane id="_57D55EC7-9DFE-4640-9162-083DCC8AF80C" drools:bgcolor="#ffffff" drools:selectable="true" name="procurement_officer"/>
+      <bpmn2:lane id="_A8FD1107-57A0-4AA1-8973-1827469FDE79" drools:bgcolor="#ffffff" drools:selectable="true" name="Store Keeper"/>
+    </bpmn2:laneSet>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_gB8VsYk9Eeazg7vqBRAn-A">
+    <bpmndi:BPMNPlane id="_gB8Vsok9Eeazg7vqBRAn-A" bpmnElement="SALES.sales_order">
+      <bpmndi:BPMNShape id="_gB8Vs4k9Eeazg7vqBRAn-A" bpmnElement="_7A9527FA-AE81-43E7-A8BC-53DCC13F7396">
+        <dc:Bounds height="144.0" width="1707.0" x="75.0" y="60.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8VtIk9Eeazg7vqBRAn-A" bpmnElement="_F1B96F9D-AFB9-4316-9F7C-8622FAEF2DA4">
+        <dc:Bounds height="140.0" width="1703.0" x="77.0" y="222.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8VtYk9Eeazg7vqBRAn-A" bpmnElement="_9A644F28-48D7-43EB-80FC-17CF0559F09E">
+        <dc:Bounds height="155.0" width="1698.0" x="78.0" y="375.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8Vtok9Eeazg7vqBRAn-A" bpmnElement="_15E2B41C-FB69-4079-808F-94DD03773AB8">
+        <dc:Bounds height="165.0" width="1698.0" x="78.0" y="540.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8Vt4k9Eeazg7vqBRAn-A" bpmnElement="_9141B004-9C4D-4F20-910A-5ACCF349587D">
+        <dc:Bounds height="167.0" width="1698.0" x="75.0" y="721.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8VuIk9Eeazg7vqBRAn-A" bpmnElement="_CC68865D-BD78-49EB-84A0-AA59176E3138">
+        <dc:Bounds height="169.0" width="1693.0" x="78.0" y="899.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8VuYk9Eeazg7vqBRAn-A" bpmnElement="_57D55EC7-9DFE-4640-9162-083DCC8AF80C">
+        <dc:Bounds height="159.0" width="1687.0" x="83.0" y="1093.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_gB8Vuok9Eeazg7vqBRAn-A" bpmnElement="_A8FD1107-57A0-4AA1-8973-1827469FDE79">
+        <dc:Bounds height="179.0" width="1694.0" x="83.0" y="1270.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_gB8Vu4k9Eeazg7vqBRAn-A" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="min"/>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_gB3dMYk9Eeazg7vqBRAn-A</bpmn2:source>
+    <bpmn2:target>_gB3dMYk9Eeazg7vqBRAn-A</bpmn2:target>
+  </bpmn2:relationship>
 </bpmn2:definitions>
